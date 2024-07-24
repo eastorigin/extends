@@ -26,4 +26,8 @@ public class Contact {
 	public void printContact() {
 		System.out.println("이름: " + this.name + ", 연락처: " + this.phone + ", 주소: " + this.address);
 	}
+	
+	public void phoneCall() {
+		System.out.println("이름: " + this.name + "에게 전화를 겁니다");
+	}
 }

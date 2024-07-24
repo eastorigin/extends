@@ -7,6 +7,8 @@ public class BatMobile extends SportsCar{
 	}
 	
 	public void seperateBat() {
+		String model = super.getModel();
+		System.out.println(model + "에서 배트포트를 분리합니다");
 		System.out.println("배트포트 분리");
 	}
 	

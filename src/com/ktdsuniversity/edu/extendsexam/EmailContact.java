@@ -6,6 +6,9 @@ package com.ktdsuniversity.edu.extendsexam;
  * 
  * 확장의 대상이 되는 클래스에 생성자가 존재할 경우
  * 확장을 하는 클래스(EmailContact)에서 반드시 해당 생성자를 호출해주어야 한다
+ * 
+ * Sub class is a Super class
+ * EmailContact is a Contact
  */
 public class EmailContact extends Contact {
 
@@ -35,5 +38,9 @@ public class EmailContact extends Contact {
 	public void printContact() {
 		super.printContact();
 		System.out.println("이메일: " + this.email);
+	}
+	
+	public void sendEmail() {
+		System.out.println("이름: " + super.getName() + "에게 이메일을 보냅니다");
 	}
 }

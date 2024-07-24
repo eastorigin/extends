@@ -15,4 +15,8 @@ public class Vehicle {
 	public void startCar() {
 		System.out.println(this.model + "을 시동을 걸었다");
 	}
+	
+	public void turnOffCar() {
+		System.out.println(this.model + "을 시동 끄다");
+	}
 }
